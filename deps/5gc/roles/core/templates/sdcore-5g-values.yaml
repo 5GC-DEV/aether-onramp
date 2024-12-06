@@ -16,18 +16,18 @@ omec-control-plane:
 5g-control-plane:
   enable5G: true
   images:
-    repository: "ghcr.io/"    # defaults to Docker Hub
+    repository: ""    # defaults to Docker Hub
     tags:
-      amf: ios-mcn-core/5gc-amf:release-0.0.8
-      smf: ios-mcn-core/5gc-smf:smf-release-0.0.4
-      pcf: ios-mcn-core/5gc-pcf:release-0.0.3
-      nrf: ios-mcn-core/5gc-nrf:smf-release-0.0.4
-      ausf: ios-mcn-core/5gc-ausf:release-0.0.3
-      nssf: ios-mcn-core/5gc-nssf:release-0.0.3
-      udm: ios-mcn-core/5gc-udm:release-0.0.3
-      udr: ios-mcn-core/5gc-udr:release-0.0.3
-      webui: ios-mcn-core/5gc-webui:release-0.0.3
-      metricfunc: ios-mcn-core/metricfunc:release-0.0.3
+      amf: ghcr.io/ios-mcn-core/5gc-amf:release-0.0.8
+      smf: ghcr.io/ios-mcn-core/5gc-smf:smf-release-0.0.4
+      pcf: ghcr.io/ios-mcn-core/5gc-pcf:release-0.0.3
+      nrf: ghcr.io/ios-mcn-core/5gc-nrf:smf-release-0.0.4
+      ausf: ghcr.io/ios-mcn-core/5gc-ausf:release-0.0.3
+      nssf: ghcr.io/ios-mcn-core/5gc-nssf:release-0.0.3
+      udm: ghcr.io/ios-mcn-core/5gc-udm:release-0.0.3
+      udr: ghcr.io/ios-mcn-core/5gc-udr:release-0.0.3
+      webui: ghcr.io/ios-mcn-core/5gc-webui:release-0.0.3
+      metricfunc: ghcr.io/ios-mcn-core/metricfunc:release-0.0.3
     # refer to above Helm Chart to add other NF images
 
   kafka:
@@ -110,9 +110,9 @@ omec-control-plane:
 omec-sub-provision:
   enable: true
   images:
-    repository: "ghcr.io"    # defaults to Docker Hub
+    repository: ""    # defaults to Docker Hub
     tags:
-      simapp: ios-mcn-core/simapp:release-0.0.3
+      simapp: ghcr.io/ios-mcn-core/simapp:release-0.0.3
 
   config:
     simapp:
@@ -314,8 +314,8 @@ omec-user-plane:
       tools: omecproject/busybox:stable
     # uncomment following section to add update bess image tag
     tags:
-      bess: ios-mcn-core/upf-epc-bess:release-ivybridge-0.0.3
-      pfcpiface: ios-mcn-core/upf-epc-pfcpiface:release-ivybridge-0.0.3
+      bess: ghcr.io/ios-mcn-core/upf-epc-bess:release-ivybridge-0.0.3
+      pfcpiface: ghcr.io/ios-mcn-core/upf-epc-pfcpiface:release-ivybridge-0.0.3
   config:
     upf:
       name: "oaisim"
