@@ -19,9 +19,9 @@ omec-control-plane:
     repository: ""    # defaults to Docker Hub
     tags:
       amf: ghcr.io/ios-mcn-core/5gc-amf:release-0.0.8
-      smf: ghcr.io/ios-mcn-core/5gc-smf:smf-release-0.0.4
+      smf: ghcr.io/ios-mcn-core/5gc-smf:release-0.0.4
       pcf: ghcr.io/ios-mcn-core/5gc-pcf:release-0.0.3
-      nrf: ghcr.io/ios-mcn-core/5gc-nrf:smf-release-0.0.4
+      nrf: ghcr.io/ios-mcn-core/5gc-nrf:release-0.0.4
       ausf: ghcr.io/ios-mcn-core/5gc-ausf:release-0.0.3
       nssf: ghcr.io/ios-mcn-core/5gc-nssf:release-0.0.3
       udm: ghcr.io/ios-mcn-core/5gc-udm:release-0.0.3
