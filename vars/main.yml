@@ -16,7 +16,7 @@ k8s:
 
 core:
   standalone: false		# set to false to place under control of ROC
-  data_iface: enp0s3
+  data_iface: ens33
   values_file: "deps/5gc/roles/core/templates/sdcore-5g-values.yaml"
   ran_subnet: ""	# set to empty string to get subnet from 'data_iface'
   helm:
