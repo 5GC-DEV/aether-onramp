@@ -7,16 +7,16 @@
   when: inventory_hostname in groups['master_nodes']  and core.helm.local_charts
   ignore_errors: yes
 
-- name: remove aether 5gc
+- name: remove iosmcn core
   kubernetes.core.helm:
     name: sd-core
-    release_namespace: omec
+    release_namespace: ios-mcn
     state: absent
     wait: true
   when: inventory_hostname in groups['master_nodes']
   ignore_errors: yes
 
-- name: remove aether chart repo
+- name: remove 5gc chart repo
   kubernetes.core.helm_repository:
     name: aether
     state: absent
@@ -32,15 +32,15 @@
   when: inventory_hostname in groups['master_nodes']
   ignore_errors: yes
 
-- name: waiting for aether pods to terminate
+- name: waiting for ios-mcn pods to terminate
   shell: |
-    kubectl wait -n omec --for=delete --all=true -l app!=ue pod --timeout=180s
+    kubectl wait -n ios-mcn --for=delete --all=true -l app!=ue pod --timeout=180s
   when: inventory_hostname in groups['master_nodes']
   ignore_errors: yes
 
-- name: delete namespace omec
+- name: delete namespace ios-mcn
   shell: |
-    kubectl delete namespace omec
+    kubectl delete namespace ios-mcn
   when: inventory_hostname in groups['master_nodes']
   ignore_errors: yes
 

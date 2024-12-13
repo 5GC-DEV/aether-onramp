@@ -130,131 +130,51 @@ omec-sub-provision:
             # You can have any number of subscriber ranges
             # This block is always necessary to establish range(s) of valid IMSIs
             subscribers:
-            - ueId-start: "208930100007487"
-              ueId-end: "208930100007500"
-              plmnId: "20893"
-              opc: "981d464c7c52eb6e5036234984ad0bcf"
+            - ueId-start: "001010000000001"
+              ueId-end: "001010000000003"
+              plmnId: "00101"
+              opc: "C42449363BBAD02B66D16BC975D77CC1"
               op: ""
-              key: "5122250214c33e723a5dd523fc145fc0"
+              key: "fec86ba6eb707ed08905757b1bb44b8f"
               sequenceNumber: "16f3b3f70fc2"
-            - ueId-start: "208930100007501"
-              ueId-end: "208930100007586"
-              plmnId: "20893"
-              opc: "981d464c7c52eb6e5036234984ad0bcf"
+            - ueId-start: "001010000000005"
+              ueId-end: "001010000000005"
+              plmnId: "00101"
+              opc: "63bfa50ee6523365ff14c1f45f88737d"
               op: ""
-              key: "5122250214c33e723a5dd523fc145fc0"
+              key: "050A34601D4F07677303652C0462535B"
+              sequenceNumber: "16f3b3f70fc2"
+            - ueId-start: "001010000000008"
+              ueId-end: "001010000000008"
+              plmnId: "00101"
+              opc: "E8ED289DEBA952E4283B54E88E6183CA"
+              op: ""
+              key: "865B5CE8B199B49FAA5F0A2EE238A6B8"
+              sequenceNumber: "16f3b3f70fc2"
+            - ueId-start: "001010000000009"
+              ueId-end: "001010000000009"
+              plmnId: "00101"
+              opc: "63bfa50ee6523365ff14c1f45f88737d"
+              op: ""
+              key: "090A34601D4F07677303652C0462535B"
               sequenceNumber: "16f3b3f70fc2"
 
             # Configure Device Groups (ignored if provision-network-slice is disabled)
             device-groups:
             - name:  "5g-gnbsim-user-group1"
               imsis:
-                - "208930100007487"
-                - "208930100007488"
-                - "208930100007489"
-                - "208930100007490"
-                - "208930100007491"
-                - "208930100007492"
-                - "208930100007493"
-                - "208930100007494"
-                - "208930100007495"
-                - "208930100007496"
-                - "208930100007497"
-                - "208930100007498"
-                - "208930100007499"
-                - "208930100007500"
-                - "208930100007501"
-                - "208930100007502"
-                - "208930100007503"
-                - "208930100007504"
-                - "208930100007505"
-                - "208930100007506"
-                - "208930100007507"
-                - "208930100007508"
-                - "208930100007509"
-                - "208930100007510"
-                - "208930100007511"
-                - "208930100007512"
-                - "208930100007513"
-                - "208930100007514"
-                - "208930100007515"
-                - "208930100007516"
-                - "208930100007517"
-                - "208930100007518"
-                - "208930100007519"
-                - "208930100007520"
-                - "208930100007521"
-                - "208930100007522"
-                - "208930100007523"
-                - "208930100007524"
-                - "208930100007525"
-                - "208930100007526"
-                - "208930100007527"
-                - "208930100007528"
-                - "208930100007529"
-                - "208930100007530"
-                - "208930100007531"
-                - "208930100007532"
-                - "208930100007533"
-                - "208930100007534"
-                - "208930100007535"
-                - "208930100007536"
-                - "208930100007537"
-                - "208930100007538"
-                - "208930100007539"
-                - "208930100007540"
-                - "208930100007541"
-                - "208930100007542"
-                - "208930100007543"
-                - "208930100007544"
-                - "208930100007545"
-                - "208930100007546"
-                - "208930100007547"
-                - "208930100007548"
-                - "208930100007549"
-                - "208930100007550"
-                - "208930100007551"
-                - "208930100007552"
-                - "208930100007553"
-                - "208930100007554"
-                - "208930100007555"
-                - "208930100007556"
-                - "208930100007557"
-                - "208930100007558"
-                - "208930100007559"
-                - "208930100007560"
-                - "208930100007561"
-                - "208930100007562"
-                - "208930100007563"
-                - "208930100007564"
-                - "208930100007565"
-                - "208930100007566"
-                - "208930100007567"
-                - "208930100007568"
-                - "208930100007569"
-                - "208930100007570"
-                - "208930100007571"
-                - "208930100007572"
-                - "208930100007573"
-                - "208930100007574"
-                - "208930100007575"
-                - "208930100007576"
-                - "208930100007577"
-                - "208930100007578"
-                - "208930100007579"
-                - "208930100007580"
-                - "208930100007581"
-                - "208930100007582"
-                - "208930100007583"
-                - "208930100007584"
-                - "208930100007585"
-                - "208930100007586"
+                - "001010000000001"
+                - "001010000000002"
+                - "001010000000003"
+                - "001010000000005"
+                - "001010000000008"
+                - "001010000000009"
               ip-domain-name: "pool1"
               ip-domain-expanded:
                 dnn: internet
-                dns-primary: "8.8.8.8"        # Value is sent to UE
-                mtu: 1460                     # Value is sent to UE when PDU Session Established
-                ue-ip-pool: "172.250.1.0/16"  # IP address pool for subscribers
+                dns-primary: "10.176.0.11"        # Value is sent to UE
+                mtu: 1456                     # Value is sent to UE when PDU Session Established
+                ue-ip-pool: "172.250.0.0/24"  # IP address pool for subscribers
                 ue-dnn-qos:
                   dnn-mbr-downlink: 1000      # UE level downlink QoS (Maximum bit rate per UE)
                   dnn-mbr-uplink:   1000      # UE level uplink QoS (Maximum bit rate per UE)
@@ -273,7 +193,7 @@ omec-sub-provision:
             network-slices:
             - name: "default"      # can be any unique slice name
               slice-id:            # must match with slice configured in gNB, UE
-                sd: "010203"
+                sd: "000000"
                 sst: 1
               site-device-group:
               - "5g-gnbsim-user-group1"   # All UEs in this device-group are assigned to this slice
@@ -292,8 +212,8 @@ omec-sub-provision:
                 - name: "gnb2"
                   tac: 2
                 plmn:
-                  mcc: "208"
-                  mnc: "93"
+                  mcc: "001"
+                  mnc: "01"
                 site-name: "enterprise"
                 upf:
                   upf-name: "upf"  # associated UPF for this slice. One UPF per Slice.
@@ -349,7 +269,7 @@ omec-user-plane:
           measure_flow: true
           gtppsc: true                   # Extension header enabled in 5G.
           cpiface:
-            dnn: "ims"              # Must match Slice dnn
+            dnn: "internet"              # Must match Slice dnn
             hostname: "upf"
             #http_port: "8080"
             enable_ue_ip_alloc: false    # If true, UPF allocates address from following pool
